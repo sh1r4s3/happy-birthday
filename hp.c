@@ -246,7 +246,7 @@ void inputPwd(char ch) {
     }
 }
 
-void *inputThread(void *) {
+void *inputThread(void *a) {
     int ch = 0;
     while ((ch = getch()) != 'q') {
         pthread_mutex_lock(&window.stateMutex);
